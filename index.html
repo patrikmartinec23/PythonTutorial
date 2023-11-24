@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python folder</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="./index.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&family=Oswald&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <div onclick="topFunction()" class="meni">
+            <img
+              class="icon"
+              src="./media/3643769-building-home-house-main-menu-start_113416.png"
+              alt="home icon"
+            />
+            <p>Home</p>
+          </div>
+        </li>
+        <li>
+          <div onclick='moveTo("websites")' class="meni">
+            <img
+              class="icon"
+              src="./media/hamburger_menu_icon_259215.png"
+              alt="websites icon"
+            />
+            <p>Ussefull Websites</p>
+          </div>
+        </li>
+        <li>
+          <div onclick='moveTo("about")' class="meni">
+            <img
+              class="icon"
+              src="./media/search_icon_259103.png"
+              alt="search icon"
+            />
+            <p>About</p>
+          </div>
+        </li>
+        <li>
+          <div class="meni">
+            <img
+              class="icon"
+              src="./media/user_search_icon_259127.png"
+              alt="user icon"
+            />
+            <p>Contact</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div id="home">
+      <header>
+        <img src="./media/4990671.png" alt="Python logo" />
+        <h1>Python Files</h1>
+      </header>
+      <div class="okvir">
+        <div class="stranski_meni">
+          <div class="meni_naslov">Snovi</div>
+          <div class="container">
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Syntax</div>
+            </a>
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Variables</div></a
+            >
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Data Types</div>
+            </a>
+
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Operator</div>
+            </a>
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Lists</div></a
+            >
+
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python If ... Else</div></a
+            >
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Lists</div></a
+            >
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python If ... Else</div></a
+            >
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Lists</div></a
+            >
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python If ... Else</div></a
+            >
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Lists</div></a
+            >
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python Lists</div></a
+            >
+
+            <a href="https://www.w3schools.com/python/python_syntax.asp"
+              ><div class="box">Python If ... Else</div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="slika1"></div>
+    <div id="websites">
+      <span class="title"><h2>Ussefull Websites</h2></span>
+      <div class="ussefull_websites">
+        <div id="slika2"></div>
+        <div class="links page2">
+          <a href="https://www.w3schools.com/">W3Schools</a>
+          <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>
+          <a href="https://stackoverflow.com/">stackoverflow</a>
+          <a href="https://peps.python.org/">PEP Index</a>
+          <a href="https://github.com/">Github</a>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <span class="title"><h2>About</h2></span>
+      <form enctype="multipart/form-data" action="upload.php" method="POST">
+        <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+        Choose a file to upload: <input name="uploadedfile" type="file" /><br />
+        <input type="submit" value="Upload File" />
+      </form>
+    </div>
+
+    <div id="slika3"></div>
+  </body>
+</html>

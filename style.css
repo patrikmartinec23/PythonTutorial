@@ -1,0 +1,270 @@
+:root {
+  --main-color: #e3e3e3;
+  --main-bg: #0d1821;
+  --primary-color: #e8e8e8;
+  --font-c-light: #040d12;
+  --primary-bg: #344966;
+  --secondary-color: #f29718;
+  --secondary-bg: #9ad1d4;
+  --pane-padding: 5px 42px;
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 90%;
+  }
+}
+
+* {
+  font-family: "Encode Sans Expanded", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin-top: 0;
+  height: fit-content;
+  background-color: var(--main-bg);
+  color: white;
+}
+
+.navbar {
+  z-index: 1000;
+  background-color: var(--primary-color);
+  display: block;
+  color: var(--font-c-light);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none; /* Remove bullets */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.meni {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  font-size: larger;
+  text-align: center;
+  width: 250px;
+  height: fit-content;
+  padding: 2px 2px;
+}
+
+.meni > p {
+  padding: 6px;
+  margin: 0;
+  color: var(--font-c-light);
+}
+
+li:hover {
+  background-color: white;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.okvir {
+  float: right;
+  position: sticky;
+  overflow: hidden;
+}
+
+.stranski_meni {
+}
+
+.meni_naslov {
+  width: 100%;
+  padding: 16px;
+  color: white;
+  background-color: var(--primary-bg);
+  border-bottom: 1px solid var(--main-color);
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  height: 100vh;
+}
+
+header > img {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  width: 100%;
+}
+
+header {
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--font-c-light);
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+#slika1 {
+  display: flex;
+  background-image: url("./media/python-and-finance-af7335a89d21d5d0fd49fce5cc9d187c.png");
+  background-attachment: fixed;
+  height: 400px;
+  opacity: 45%;
+}
+
+#slika2 {
+  padding: 5px;
+  margin-right: 100px;
+  margin-top: 100px;
+  background-image: url("./media/coding.jpg");
+  background-attachment: scroll;
+  min-height: 400px;
+  max-height: 500px;
+  width: 40%;
+  opacity: 45%;
+}
+
+#slika3 {
+  display: flex;
+  background-image: url("./media/tra232323-python-coding-bundle.png");
+  background-attachment: fixed;
+  width: 100%;
+  height: 200px;
+  opacity: 45%;
+}
+
+.box a {
+  padding: 50px;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr; */
+  /* gap: 35px; */
+}
+
+.box:hover {
+  border: #f29718;
+  background-color: var(--main-color);
+  font-weight: bold;
+  color: var(--font-c-light);
+}
+
+.line > a {
+  text-decoration: none;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: fit-content;
+  padding: 12px;
+  background-color: #344966;
+  text-align: center;
+}
+
+#websites {
+  display: grid;
+  grid-template-rows: fit-content;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.ussefull_websites {
+  margin: 0px 50px 50px;
+  display: flex;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 40%;
+  margin: auto 0px 50px 90px;
+  height: 300px;
+  background-color: var(--primary-bg);
+}
+
+.links > a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.links > a:hover {
+  color: #040d12;
+  background-color: var(--main-color);
+}
+
+.title {
+  padding: 8px;
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+  height: fit-content;
+  background-color: var(--font-c-light);
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: fit-content;
+  grid-template-columns: 1fr;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 300px;
+}
